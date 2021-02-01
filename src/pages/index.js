@@ -9,7 +9,7 @@ const BlogLink = styled(Link)`
   text-decoration: none;
 `;
 
-const BlogTitle = styled.h3`
+const BlogTitle = styled.span`
   margin-bottom: 20px;
   color: blue;
 `;
@@ -31,7 +31,7 @@ export default ({ data }) => (
                   <BlogLink to={node.fields.slug}>
                     <h2 className="post-title">
                       {node.frontmatter.title}
-                      <BlogTitle>- {node.frontmatter.date}</BlogTitle>
+                      <BlogTitle> - {node.frontmatter.date}</BlogTitle>
                     </h2>
                   </BlogLink>
                 </div>
@@ -68,4 +68,4 @@ export const query = graphql`
       totalCount
     }
   }
-`;
+  `;

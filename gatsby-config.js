@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `MoyArt's Blog`,
+    title: `MoyArt's Gatsby Blog`,
     description: `A small blog to learn about Gatsby, created with React, Gatsby Markdown and love <3.`,
     author: `@moyart`,
   },
@@ -35,6 +35,7 @@ module.exports = {
         icon: `src/images/MoyArt.jpg`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-sass`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

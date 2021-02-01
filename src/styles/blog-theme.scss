@@ -1,0 +1,12 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: purple;
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+.main_header{
+  background: rgb(252,91,0);
+  background: linear-gradient(325deg, rgba(252,91,0,1) 0%, rgba(232,239,0,1) 100%);
+  border-bottom: 1px solid#a52a2a;
+}
