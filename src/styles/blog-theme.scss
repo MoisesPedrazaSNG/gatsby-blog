@@ -5,8 +5,35 @@ body {
   color: $primary-color;
 }
 
-.main_header{
+.main_header {
   background: rgb(252,91,0);
   background: linear-gradient(325deg, rgba(252,91,0,1) 0%, rgba(232,239,0,1) 100%);
   border-bottom: 1px solid#a52a2a;
+}
+
+.main__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.layout-content {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 1.0875rem 1.45rem;
+}
+
+.layout-footer {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid#a52a2a;
+  font-size: 14px;
+  
+  a {
+    color: yellow;
+    text-decoration: none;
+  }
 }
