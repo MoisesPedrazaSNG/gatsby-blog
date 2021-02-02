@@ -19,7 +19,7 @@ export default ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <div>
-      <h1>MoyArt's Thoutghts</h1>
+      <h2>Posts created with Markdown and love!</h2>
       <h4>{`Number of posts: ${data.allMarkdownRemark.totalCount}`}</h4>
       <hr></hr>
       <div className="post-main__wrapper">
