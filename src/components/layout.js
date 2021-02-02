@@ -25,28 +25,23 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
+    <div className="main__wrapper">
+      <section className="layout-header-and-content">
+        <Header className="layout-header" siteTitle={data.site.siteMetadata?.title || `Title`} />
+        <main className="layout-content">{children}</main>
+      </section>
+      <footer
         style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          marginTop: `2rem`,
         }}
+        className="layout-footer"
       >
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Hecho con
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby </a>
-          Carnal!
-        </footer>
-      </div>
-    </>
+        © {new Date().getFullYear()}, Made with
+        {` `}
+        <a href="https://www.gatsbyjs.com">Gatsby </a>
+        Carnal!
+      </footer>
+    </div>
   )
 }
 
