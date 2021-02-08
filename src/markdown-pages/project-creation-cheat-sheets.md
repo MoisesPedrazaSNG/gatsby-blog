@@ -8,10 +8,16 @@ I'm creating this cheat sheet in order to have one place to look at wheen i need
 
 I used to have that written in my notes, but makes more sense to have it here so hope you like it.
 
-## Angular
+## Angular: Create an app
 
 ```
 ng new name-of-your-project
+```
+
+### Angular: Generate a new component.
+
+```
+ng generate component name-of-the-component
 ```
 
 ## React
