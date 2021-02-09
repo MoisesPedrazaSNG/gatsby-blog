@@ -26,12 +26,16 @@ export default ({ data }) => (
             return (
               <div className="post" key={node.id}>
                 <div className="post-metadata">
-                  <BlogLink to={node.fields.slug}>
-                    <h2 className="post-title">
-                      {node.frontmatter.title}
-                      <BlogTitle> - {node.frontmatter.date}</BlogTitle>
-                    </h2>
-                  </BlogLink>
+                  <Link to={node.fields.slug} className="post-link">
+                    <p className="post-title">
+                      <span className="title-icon"><MdLocalActivity /></span> 
+                      <span>{node.frontmatter.title}</span>
+                    </p>
+                    <p className="post-date">
+                      <span className="title-icon"><MdLabel /></span>
+                      <span>{node.frontmatter.date}</span>
+                    </p>
+                  </Link>
                 </div>
                 <p className="post-excerpt">
                   {node.excerpt}
