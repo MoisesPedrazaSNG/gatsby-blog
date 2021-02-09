@@ -1,13 +1,11 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
 import styled from 'styled-components';
+import { MdLabel, MdLocalActivity } from "react-icons/md";
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-const BlogLink = styled(Link)`
-  text-decoration: none;
-`;
 
 const BlogTitle = styled.span`
   margin-bottom: 20px;
