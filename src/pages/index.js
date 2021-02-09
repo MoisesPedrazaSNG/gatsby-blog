@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
-import { MdToday, MdLocalActivity } from "react-icons/md";
+import { MdToday, MdLocalActivity, MdFavorite } from "react-icons/md";
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -9,8 +9,8 @@ export default ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <div>
-      <h2>Posts created with Markdown and love!</h2>
-      <h4>{`Number of posts: ${data.allMarkdownRemark.totalCount}`}</h4>
+      <h2 className="tagline">Posts created with Markdown and <MdFavorite className="tagline-icon"/></h2>
+      <h4 className="number-of-posts">Number of posts: <span>{data.allMarkdownRemark.totalCount}</span></h4>
       <hr></hr>
       <div className="post-main__wrapper">
         {
