@@ -4,6 +4,12 @@ $accent-color: #b10048;
 $second-accent-color: #faff00;
 $rem-value: 10px;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
 html {
  font-size: $rem-value;
 }
