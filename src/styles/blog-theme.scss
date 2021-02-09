@@ -22,7 +22,6 @@ body {
   margin: 0 auto;
   max-width: 960px;
   padding: 0 1.0875rem 1.45rem;
-  height: 100%;
   background-color: white;
 }
 
@@ -42,7 +41,7 @@ body {
 
 .post-metadata {
   background: rgb(59,1,77);
-  background: linear-gradient(325deg, rgba(59,1,77,1) 0%, rgba(177,0,72,1) 100%);
+  background: linear-gradient(325deg, #3b014d 0%, #b10048 100%);
   color: white;
   p {
     margin: 0;
@@ -59,7 +58,6 @@ body {
     }
   };
   .post-title, .post-date {
-    padding: 0 10px;
     display: flex;
     align-items: center;
     text-transform: uppercase;
@@ -67,11 +65,13 @@ body {
 
   .title-icon {
     color: #faff00;
-    margin-right: 5px;
+    margin-right: 7px;
     height: 17px;
   }
-  .post-exerpt {
-    padding: 20px;
-    border: 1px solid black;
-  }
+}
+
+.post-excerpt {
+  padding: 20px;
+  border: 1px solid #b10048;
+  color: #3b014d
 }

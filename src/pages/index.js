@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
-import { MdLabel, MdLocalActivity } from "react-icons/md";
+import { MdToday, MdLocalActivity } from "react-icons/md";
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -20,11 +20,11 @@ export default ({ data }) => (
                 <div className="post-metadata">
                   <Link to={node.fields.slug} className="post-link">
                     <p className="post-title">
-                      <span className="title-icon"><MdLocalActivity /></span> 
+                      <span className="title-icon title-icon"><MdLocalActivity /></span> 
                       <span>{node.frontmatter.title}</span>
                     </p>
                     <p className="post-date">
-                      <span className="title-icon"><MdLabel /></span>
+                      <span className="title-icon date-icon"><MdToday /></span>
                       <span>{node.frontmatter.date}</span>
                     </p>
                   </Link>
